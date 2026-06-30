@@ -1,0 +1,47 @@
+seed: 1337
+device: cuda
+output_dir: results_tgo_iii
+
+data:
+  train_dir: ""
+  val_dir: ""
+  class_subset_file: null
+  image_size: 224
+  num_workers: 8
+  pin_memory: true
+  analysis_set_size: 1000
+  analysis_seed: 2025
+  trajectory_set_size: 100
+  trajectory_seed: 2026
+
+model:
+  name: vit_small_patch16_224
+  pretrained: false
+  num_classes: 100
+  drop_rate: 0.0
+  drop_path_rate: 0.1
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  min_lr: 0.000001
+  weight_decay: 0.05
+  opt: adamw
+  momentum: 0.9
+  label_smoothing: 0.1
+  clip_grad: 1.0
+  amp: true
+
+analysis:
+  summary_every: 5
+  snapshot_epochs: [1, 10, 20, 50, 100]
+  probe_test_fraction: 0.2
+  probe_max_iter: 2000
+  local_pca_variance_threshold: 0.95
+  min_class_samples: 5
+  twonn_use_centered: true
+
+checkpoint:
+  save_best: true
+  save_last: true
