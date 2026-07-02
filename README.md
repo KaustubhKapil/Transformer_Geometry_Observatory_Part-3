@@ -152,3 +152,11 @@ The findings of TGO-III will determine whether semantic structure appears as:
 - Larger between-class distances
 - Higher local manifold dimension
 - Stronger layer-wise discrimination
+
+
+## Results
+TGO-III extends the Transformer Geometry Observatory by investigating the emergence of semantic organization throughout Vision Transformer training. Unlike TGO-I and TGO-II, which focused on spectral and representation geometry, TGO-III analyzes how class-level structure evolves using Linear Probe Accuracy, Fisher Ratio, Class Centroid Distances, and Local PCA Rank.
+
+Our experiments demonstrate a consistent improvement in semantic organization as training progresses. Linear Probe Accuracy increases steadily across optimization, with the strongest discriminative representations emerging in the final Transformer blocks and the CLS token. Fisher Ratio similarly increases throughout training, indicating progressively better separation between semantic classes. Mean pairwise centroid distances expand before stabilizing, suggesting that class representations occupy increasingly distinct regions of the feature space. Local PCA Rank initially increases before gradually decreasing, indicating an early expansion of local semantic manifolds followed by progressive refinement into compact and discriminative class-specific representations.
+
+Collectively, these observations support the Semantic Expansion Hypothesis, providing empirical evidence that the representational directions discovered throughout training are increasingly allocated toward encoding discriminative semantic concepts rather than merely increasing representational complexity. Together with the findings of TGO-I and TGO-II, TGO-III completes the initial geometric investigation of Transformer learning by establishing a direct connection between spectral evolution, manifold expansion, and semantic organization.
