@@ -163,4 +163,16 @@ Collectively, these observations support the Semantic Expansion Hypothesis, prov
 
 ## Pre-Print
 Further details have been provided in my pre-print, please go through and share your valuable feedback. I would really appreciate it
-`https://www.researchgate.net/publication/411039167_TGO-III_Semantic_Geometry_Observatory`
+[https://www.researchgate.net/publication/411039167_TGO-III_Semantic_Geometry_Observatory]
+If you found this study helpful and useful in your own work, please cite TGO-III
+```
+@misc{tgoiii,
+author ={Kaustubh Kapil and Kishor P. Upla},
+year = {2026},
+month = {07},
+pages = {},
+title = {TGO-III: Semantic Geometry Observatory},
+doi = {10.13140/RG.2.2.26440.07689},
+url = {https://www.researchgate.net/publication/411039167_TGO-III_Semantic_Geometry_Observatory}
+}
+```
